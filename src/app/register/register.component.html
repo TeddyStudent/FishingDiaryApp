@@ -1,16 +1,12 @@
-<p>
-  register works!
-</p>
 
 <form class="cover">
-  <h1>Please register</h1>
-  <label>Firstname</label>
-  <input type="text" id="inputFirstName" placeholder="firstName" required autofocus>
-  <label>Lastname</label>
-  <input type="text" id="inputLastName" placeholder="lastName" required>
-  <label>Email</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
-  <label>Username</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-  <button type="submit" (click)="registerUser()">Register</button>
+  <ul>
+    <li><h1>Please register</h1></li>
+    <li><input type="text" id="inputFirstName" placeholder="Firstname" required autofocus></li>
+    <li><input type="text" id="inputLastName" placeholder="Lastname" required></li>
+    <li><input type="email" id="inputEmail" class="form-control" placeholder="Email" required></li>
+    <li><input type="password" id="inputPassword" class="form-control" placeholder="Password" required></li>
+    <li><input type="button" (click)="registerUser()" value="Register"/></li>
+  </ul>
+
 </form>
