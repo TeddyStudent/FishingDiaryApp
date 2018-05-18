@@ -8,7 +8,7 @@ import { TripsComponent } from './trips/trips.component';
 const routes: Routes = [
   {
     path: '',
-    component: CoverComponent
+    component: LoginComponent
   },
   {
     path: 'login',
