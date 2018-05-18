@@ -12,4 +12,8 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
+  registerUser() {
+    alert('register failed!');
+  }
+
 }
