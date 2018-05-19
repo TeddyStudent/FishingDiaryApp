@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-trips',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TripsComponent implements OnInit {
 
+  // Example data for trips
   reissut = [
     { id: 1, pvm: '12-05-2017', paikka: 'Roine', saa: 'Aurinkoinen', tn: 1, ts: 'itä', li: 22, lv: 19 },
     { id: 2, pvm: '11-06-2017', paikka: 'Saimaa', saa: 'Pilvinen', tn: 5, ts: 'etelä', li: 18, lv: 17 },
@@ -14,7 +16,7 @@ export class TripsComponent implements OnInit {
   ];
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
