@@ -2,12 +2,12 @@
 #trips {
   /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
   border-collapse: collapse;
-  width: fit-content;  /* : 100%; */
+  width: fit-content;
 }
 
 #trips td, #trips th {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 10px;
 }
 
 /* #trips tr:nth-child(even){background-color: #f2f2f2;} */
