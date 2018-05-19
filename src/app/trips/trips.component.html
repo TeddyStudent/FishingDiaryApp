@@ -15,9 +15,19 @@
 </table>
 
 <br>
-<ul>
-  <li *ngFor="let user of users">{{ user | json }}</li>
-</ul>
+<h1>Users</h1>
+<table id="userTable" style="width:fit-content">
+  <thead>
+  <tr>
+    <th>ID</th><th>Firstname</th><th>Lastname</th><th>Email</th><th>Password</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <td>{{ user.idtili }}</td><td>{{ user.etunimi }}</td><td>{{ user.sukunimi }}</td><td>{{ user.email }} </td><td>{{ user.salasana }}</td>
+  </tr>
+  </tbody>
+</table>
 
 
 
