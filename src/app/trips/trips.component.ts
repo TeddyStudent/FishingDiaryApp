@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router} from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-trips',
@@ -15,10 +16,12 @@ export class TripsComponent implements OnInit {
     { id: 3, pvm: '11-06-2017', paikka: 'Saimaa', saa: 'Pilvinen', tn: 4, ts: 'etelä', li: 19, lv: 17 }
   ];
 
-
-  constructor(private router: Router) { }
+  users: any[];
+  constructor(private router: Router, private _userService: DataService) { }
 
   ngOnInit() {
+    this._userService.getUsers()
+      .subscribe(data => this.users = data);
   }
 
 }
