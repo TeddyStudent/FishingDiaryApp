@@ -1,8 +1,18 @@
 
 <h1>Trips</h1>
-<p class="reissut-container" *ngFor="let reissu of reissut">
-  {{ reissu | json }}
-</p>
+
+<table id="trips">
+  <thead>
+    <tr>
+      <th>Date</th><th>Place</th><th>Wheather</th><th>Wind speed</th><th>Wind direction</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let reissu of reissut">
+    <td>{{ reissu.pvm }}</td><td>{{ reissu.paikka }}</td><td>{{ reissu.saa }}</td><td>{{ reissu.tn }}</td><td>{{ reissu.ts }}</td>
+  </tr>
+  </tbody>
+</table>
 
 
 
