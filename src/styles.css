@@ -5,7 +5,7 @@
 body {
   background:#2E9CE6;
   /* background-image: url(./assets/images/background-blue-clean-355808.jpg); */
-  padding: 3em;
+  padding: 1em;
   font-family: 'Raleway', 'Arial';
   font-size: medium;
   color:#fff;
@@ -26,4 +26,8 @@ ul li a {
 a {
   color:#fff;
   text-decoration:none;
+}
+
+.userInfo {
+  float: right;
 }
