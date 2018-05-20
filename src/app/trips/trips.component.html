@@ -32,6 +32,49 @@
 </table>
 
 
+<h1>Create new trip</h1>
+
+<table class="trips">
+  <thead>
+  <tr>
+    <th>Date</th><th>Place</th><th>Weather</th><th>Wind speed (m/s)</th>
+    <th>Wind direction</th><th>Air temperature (&#176;C)</th><th>Water temperature (&#176;C)</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><input id="pvm" type="date" /></td>
+    <td><input id="paikka" type="text" /></td>
+    <td><input id="saa" list="saat" type="text" />
+      <datalist id="saat">
+        <option> </option>
+        <option>pilvinen</option>
+        <option>puolipilvinen</option>
+        <option>selkeä</option>
+        <option>sadekuuroja</option>
+        <option>kovaa sadetta</option>
+        <option>ukkosta</option>
+      </datalist>
+    </td>
+    <td><input id="tuuli_nopeus" type="number" /></td>
+    <td><input id="tuuli_suunta" list="suunnat" type="text" />
+      <datalist id="suunnat">
+        <option> </option>
+        <option>pohjoinen</option>
+        <option>koillinen</option>
+        <option>itä</option>
+        <option>kaakko</option>
+        <option>etelä</option>
+        <option>lounas</option>
+        <option>länsi</option>
+        <option>luode</option>
+      </datalist>
+    </td>
+    <td><input id="lampo_ilma" type="number" /></td>
+    <td><input id="lampo_vesi" type="number" /></td>
+  </tr>
+  </tbody>
+</table>
 
 
 
