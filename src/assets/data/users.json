@@ -1,0 +1,23 @@
+[
+  {
+    "idtili": 1,
+    "etunimi": "Harrison",
+    "sukunimi": "Ford",
+    "email": "haford@domain.com",
+    "salasana": "holygrail"
+  },
+  {
+    "idtili": 2,
+    "etunimi": "Sean",
+    "sukunimi": "Connery",
+    "email": "seconnery@domain.com",
+    "salasana": "lastcrusade"
+  },
+  {
+    "idtili": 3,
+    "etunimi": "River",
+    "sukunimi": "Phoenix",
+    "email": "riphoenix@domain.com",
+    "salasana": "standbyme"
+  }
+]

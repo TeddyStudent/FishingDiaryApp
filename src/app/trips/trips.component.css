@@ -1,25 +1,26 @@
 
-#trips {
+.trips {
   /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
   border-collapse: collapse;
   width: fit-content;
 }
 
-#trips td, #trips th {
+.trips td, .trips th {
   border: 1px solid #ddd;
   padding: 10px;
 }
 
 /* #trips tr:nth-child(even){background-color: #f2f2f2;} */
 
-#trips tr:hover {
+.trips tr:hover {
   background-color: #2E64FE;
 }
 
-#trips th {
+.trips th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
   background-color: #4CAF50;
   color: white;
 }
+

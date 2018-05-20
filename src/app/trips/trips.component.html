@@ -1,7 +1,7 @@
 
-<h1>Trips</h1>
+<h1>Trips (data from array)</h1>
 
-<table id="trips">
+<table class="trips">
   <thead>
     <tr>
       <th>Date</th><th>Place</th><th>Wheather</th><th>Wind speed</th><th>Wind direction</th>
@@ -14,20 +14,24 @@
   </tbody>
 </table>
 
-<br>
-<h1>Users</h1>
-<table id="userTable" style="width:fit-content">
+<h1>Trips (data from server)</h1>
+
+<table class="trips">
   <thead>
   <tr>
-    <th>ID</th><th>Firstname</th><th>Lastname</th><th>Email</th><th>Password</th>
+    <th>Trip Id</th><th>Date</th><th>Place</th><th>Weather</th><th>Wind speed (m/s)</th>
+    <th>Wind direction</th><th>Air temperature (&#176;C)</th><th>Water temperature (&#176;C)</th>
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let user of users">
-    <td>{{ user.idtili }}</td><td>{{ user.etunimi }}</td><td>{{ user.sukunimi }}</td><td>{{ user.email }} </td><td>{{ user.salasana }}</td>
+  <tr *ngFor="let trip of trips">
+    <td>{{ trip.idkalareissu }}</td><td>{{ trip.pvm }}</td><td>{{ trip.paikka }}</td><td>{{ trip.saa }} </td>
+    <td>{{ trip.tuuli_nopeus }}</td><td>{{ trip.tuuli_suunta }}</td><td>{{ trip.lampotila_ilma }}</td><td>{{ trip.lampotila_vesi }}</td>
   </tr>
   </tbody>
 </table>
+
+
 
 
 
